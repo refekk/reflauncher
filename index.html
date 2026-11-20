@@ -20,6 +20,21 @@
         html { scroll-behavior: smooth; }
         body { background: var(--bg); color: #fff; min-height: 100vh; overflow-x: hidden; }
 
+        /* --- KOMUNIKAT O ARCHIWIZACJI --- */
+        .archive-banner {
+            background: rgba(255, 42, 133, 0.12);
+            border-bottom: 1px solid rgba(255, 42, 133, 0.35);
+            color: #ffd6e7;
+            font-size: 0.9rem;
+            font-weight: 400;
+            padding: 11px 28px;
+            text-align: center;
+        }
+        .archive-banner b {
+            color: #fff;
+            font-weight: 600;
+        }
+
         .glow {
             position: fixed; inset: 0; z-index: -1;
             background:
@@ -190,6 +205,10 @@
     </style>
 </head>
 <body>
+    <div class="archive-banner" role="status">
+        Strona jest zarchiwizowana — <b>22 listopada</b> domena zostanie odepnięta od strony.
+    </div>
+
     <div class="glow" aria-hidden="true"></div>
 
     <div class="wrap">
@@ -200,7 +219,7 @@
 
         <header class="hero">
             <div>
-                <div class="chip">Launcher na Androida</div>
+                <div class="chip">Launcher na Androida · Zarchiwizowano</div>
                 <h1>Twoje aplikacje.<br><b>Pod kciukiem.</b></h1>
                 <p class="lead">RefLauncher to launcher z widżetem stanu telefonu, wyszukiwarką, kategoriami i paskiem liter A–Z.</p>
                 <div class="actions">
@@ -265,7 +284,7 @@
 
         <section class="download" id="pobierz">
             <h2>Zainstaluj <b>RefLauncher</b></h2>
-            <p>Wymagany Android 14 lub nowszy. Pobierz plik, otwórz go na telefonie i potwierdź instalację.</p>
+            <p>Strona jest zarchiwizowana, a 22 listopada domena zostanie odepnięta od strony. Wymagany Android 14 lub nowszy.</p>
             <a class="btn" href="https://github.com/pawissek/reflauncher/releases/download/Test-Build/reflauncher-testbuild1.apk" download>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
                 Wypróbuj Test Build
@@ -273,7 +292,7 @@
         </section>
 
         <footer>
-            <span>© RefLauncher</span>
+            <span>© RefLauncher · Strona zarchiwizowana (odpięcie domeny 22 listopada)</span>
         </footer>
     </div>
 
